@@ -1,7 +1,9 @@
 import { defineConfig } from 'astro/config';
 
+import preact from '@astrojs/preact';
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://quistaker.github.io',
+  site: 'https://quistaker.github.io/shaggy-solstice',
+  integrations: [preact()],
 });
-
